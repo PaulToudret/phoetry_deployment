@@ -5,12 +5,12 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/PaulToudret/application-deployment.git
+    repoURL: https://github.com/PaulToudret/phoetry_deployment.git
     targetRevision: main
     path: deployment
   destination:
     server: https://kubernetes.default.svc
-    namespace: user-<your_sspcloud_username>
+    namespace: user-${paultoudret}
   syncPolicy:
     automated:
       selfHeal: true
