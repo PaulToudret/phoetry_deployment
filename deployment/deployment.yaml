@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: phoetry
-        image: paultoudret/phoetry:v0.1.1
+        image: paultoudret/phoetry:v0.1.2
         ports:
         - containerPort: 8000
