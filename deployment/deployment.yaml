@@ -1,5 +1,5 @@
 #| filename: "deployment/deployment.yaml"
-apiVersion: apps/v2
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: phoetry-deployment
@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: phoetry
-        image: Kodro23/phoetry:v2.0.0
+        image: paultoundret/phoetry:v0.1.3
         ports:
         - containerPort: 8000
